@@ -1,0 +1,14 @@
+{% extends 'layout.html' %}
+
+{% block title %} {{ data.surname }} {{ data.name }}{% endblock %}
+
+{% block content %}
+
+    <h1>Id{{ data.id }}</h1>
+    <h2>{{ data.surname }} {{ data.name }}</h2>
+    <h2>{{ data.age }}</h2>
+    <h2>{{ data.occupation }}</h2>
+    <h2>{{ data.worldview }}</h2>
+    <h2>{{ data.quote }}</h2>
+
+{% endblock %}

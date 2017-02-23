@@ -1,11 +1,69 @@
+@font-face {
+    font-family: 'Deus Ex';
+    src: url('deusex.otf')
+}
+
 body{
     background: url('img/background.png');
 }
 
-h1{
+h1, h2{
     color: white;
+    font-family: 'Deus ex'; 
 }
 
-h2{
-    color: white;
+.temp{
+    text-align: center;
+}
+
+.header{
+    margin-left: 25px;    
+}
+
+.main-page{
+    position: absolute;
+    top: 50%;
+    margin-left: 50px;
+}
+
+.btn-hvr{
+    border: none;
+    
+    text-align: center;
+    cursor: pointer;
+    
+    
+    overflow: hidden;
+    position: relative;
+    color: #fff;
+    font-weight: 700;
+    font-size: 18px;
+    background-color: #222;
+        
+    
+    font-family: 'Deus Ex';
+}
+
+.btn-hvr span{
+    position: relative;
+    z-index: 1;
+}
+
+.btn-hvr:after{
+    content: "";
+    position: absolute;
+    left: 10%;
+    top: 0%;
+    height: 490%;
+    width: 140%;
+    background: darkorange;
+    -webkit-transition: all .25s ease-in-out;
+    transition: all .25s ease-in-out;
+    -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+    transform: translateX(-98%) translateY(-25%) rotate(45deg);
+}
+
+.btn-hvr:hover:after {
+    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+    transform: translateX(-9%) translateY(-25%) rotate(45deg);
 }

@@ -1,69 +1,150 @@
 @font-face {
-    font-family: 'Deus Ex';
-    src: url('deusex.otf')
+  font-family: 'Deus Ex';
+  src: url('deusex.otf')
 }
 
-body{
-    background: url('img/background.png');
+
+
+/* basic */
+
+body {
+  background: url('img/background.png');
+  padding-left: 25px;
 }
 
-h1, h2{
-    color: white;
-    font-family: 'Deus ex'; 
+table {
+  width: 600px;
+}
+
+td {
+  padding: 0 10px;
+  vertical-align: top;
+}
+
+h1, 
+h2 {
+  color: white;
+  font-family: 'Deus ex'; 
 }
 
 .temp{
-    text-align: center;
+  text-align: center;
 }
 
-.header{
-    margin-left: 25px;    
+.header * {
+  display: inline-block;
 }
 
-.main-page{
-    position: absolute;
-    top: 50%;
-    margin-left: 50px;
+.main-page {
+  position: absolute;
+  top: 50%;
+  margin-left: 50px;
 }
+
+
+
+/* Button hover */
 
 .btn-hvr{
-    border: none;
+  border: none;
+  
+  text-align: center;
+  cursor: pointer;
+  
+  
+  overflow: hidden;
+  position: relative;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  background-color: #222;
     
-    text-align: center;
-    cursor: pointer;
-    
-    
-    overflow: hidden;
-    position: relative;
-    color: #fff;
-    font-weight: 700;
-    font-size: 18px;
-    background-color: #222;
-        
-    
-    font-family: 'Deus Ex';
+  
+  font-family: 'Deus Ex';
 }
 
 .btn-hvr span{
-    position: relative;
-    z-index: 1;
+  position: relative;
+  z-index: 1;
 }
 
 .btn-hvr:after{
-    content: "";
-    position: absolute;
-    left: 10%;
-    top: 0%;
-    height: 490%;
-    width: 140%;
-    background: darkorange;
-    -webkit-transition: all .25s ease-in-out;
-    transition: all .25s ease-in-out;
-    -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
-    transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  content: "";
+  position: absolute;
+  left: 10%;
+  top: 0%;
+  height: 490%;
+  width: 140%;
+  background: darkorange;
+  -webkit-transition: all .25s ease-in-out;
+  transition: all .25s ease-in-out;
+  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
+  transform: translateX(-98%) translateY(-25%) rotate(45deg);
 }
 
 .btn-hvr:hover:after {
-    -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
-    transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
+  transform: translateX(-9%) translateY(-25%) rotate(45deg);
+}
+
+
+
+/* gallery */
+
+.gallery {
+  height: 400px;
+  width: 100%;
+  background-color: #000;
+  display: flex;
+}
+
+.image {
+    flex-grow: 1;
+	opacity: .3;
+    margin-right: 1px;
+    transition: flex-grow .3s ease-in-out, opacity .3s ease-in-out;;
+    background-position: center;
+    background-size: cover;
+}
+
+.image:hover {
+    flex-grow: 15;
+    opacity: 1;
+}
+
+.image:nth-of-type(1) {
+    background-image: url(img/gallery-img1.jpg);
+}
+.image:nth-of-type(2) {
+    background-image: url(img/gallery-img2.jpg);
+}
+.image:nth-of-type(3) {
+    background-image: url(img/gallery-img3.jpg);
+}
+.image:nth-of-type(4) {
+    background-image: url(img/gallery-img4.jpg);
+}
+.image:nth-of-type(5) {
+    background-image: url(img/gallery-img5.jpg);
+}
+.image:nth-of-type(6) {
+    background-image: url(img/gallery-img6.jpg);
+}
+.image:nth-of-type(7) {
+    background-image: url(img/gallery-img7.jpg);
+}
+.image:nth-of-type(8) {
+    background-image: url(img/gallery-img8.jpg);
+}
+.image:nth-of-type(9) {
+    background-image: url(img/gallery-img9.jpg);
+}
+.image:nth-of-type(10) {
+    background-image: url(img/gallery-img10.jpg);
+}
+.image:nth-of-type(11) {
+    background-image: url(img/gallery-img11.jpg);
+}
+.image:last-of-type {
+    margin-right: 0px;
 }

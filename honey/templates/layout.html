@@ -1,27 +1,27 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8" />
-    <title>
-        {% block title %}
-        {% endblock %}
-    </title>
-    
-    <!--{% load staticfiles %}-->
-    
-    <link rel="stylesheet" href="{% static 'style.css' %}">
-    
+  <meta charset="utf-8" />
+  <title>
+    {% block title %}
+    {% endblock %}
+  </title>
+  
+  <!--{% load staticfiles %}-->
+  
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  
 </head>
 <body>
-    <div class="header">
-        <h1>Hive</h1>
-        <a href="/main"><button class="btn-hvr"><span>Main</span></button></a>
-        <a href="/id37"><button class="btn-hvr"><span>some button</span></button></a>
-    </div>
+  <div class="header">
+    <h1>Hive</h1>
+    <a href="/main"><button class="btn-hvr"><span>To Main</span></button></a>
+    <a href="/id37"><button class="btn-hvr"><span>Some id</span></button></a>
+  </div>
 
 
-    {% block content %}
-    {% endblock %}
+  {% block content %}
+  {% endblock %}
 
 </body>
 </html>

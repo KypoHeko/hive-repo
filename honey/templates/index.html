@@ -2,19 +2,22 @@
 <html>
 <head>
     
-    <meta charset="utf-8" />
-    <title>Hive</title>
+  <meta charset="utf-8" />
+  <title>Hive</title>
     
-    {% load staticfiles %}
-    <link rel="stylesheet" href="{% static 'style.css' %}">
+  {% load staticfiles %}
+  <link rel="stylesheet" href="{% static 'style.css' %}">
+  <link rel="icon" href="{% static 'hive-ico.ico' %}">
     
 </head>
 <body>
     
-    <div class="main-page">
-        <h1>Hive</h1>
-        <a href="/main"><button class="btn-hvr"><span>COME IN</span></button></a>
-    </div>
+  <div class="main-page">
+    <h1>Hive</h1>
+    <a href="/#"><button class="btn-hvr"><span>LOG IN</span></button></a>
+    <p></p>
+    <a href="/main"><button class="btn-hvr"><span>A GUEST</span></button></a>
+  </div>
 
 </body>
 </html>

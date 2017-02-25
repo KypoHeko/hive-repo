@@ -37,7 +37,7 @@ h2 {
 
 .main-page {
   position: absolute;
-  top: 50%;
+  top: 40%;
   margin-left: 50px;
 }
 
@@ -148,3 +148,7 @@ h2 {
 .image:last-of-type {
     margin-right: 0px;
 }
+
+
+
+/*  */

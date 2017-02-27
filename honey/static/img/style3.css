@@ -5,7 +5,7 @@ body {
 .hexrow {
     white-space: nowrap;
     /*right/left margin set at (( width of child div x sin(30) ) / 2) makes a fairly tight fit; a 3px bottom seems to match*/
-    margin: 0 25px 3px; 
+    margin: 0 25px; 
 }
 
 .hexrow > div {
@@ -17,13 +17,13 @@ body {
     */
     margin: 0 25px; 
     position: relative;
-    background-image: url(http://i1166.photobucket.com/albums/q605/Artem_Lebedev/dog-training-collars.jpg);
+    background-image: url(gallery-img1.jpg);
     background-position: -50px 0; /* -left position -1 x width x sin(30) */
     background-repeat: no-repeat;
     background-size: auto 120%;
     color: #000000;
     text-align: center;
-    line-height: 173.2px; /*equals height*/
+    line-height: 346.4px; /*equals height*/
     display: inline-block;
 }
 
@@ -132,7 +132,7 @@ body {
 }
 
 .hexrow:nth-child(2) > div:nth-child(1) {
-    background-image: url(http://i724.photobucket.com/albums/ww244/NBAchikk1995/flowers.jpg);
+    background-image: url(gallery-img5.jpg);
 }
 
 .hexrow:nth-child(2) > div:nth-child(1) > span {
@@ -144,12 +144,12 @@ body {
 }
 
 .hexrow:nth-child(2) > div:nth-child(2) {
-    background-image: url(http://i197.photobucket.com/albums/aa231/sterling_red/landscape.jpg);
+    background-image: url(gallery-img6.jpg);
     color: #ffffff;
 }
 
 .hexrow:nth-child(2) > div:nth-child(3) {
-    background-image: url(http://i257.photobucket.com/albums/hh204/h22prld98/2157781306_7a7a8e4cf7.jpg);
+    background-image: url(gallery-img7.jpg);
     opacity: .3;
     color: #ffffff;
 }
@@ -159,7 +159,7 @@ body {
 }
 
 .hexrow:nth-child(2) > div:nth-child(4) {
-    background-image: url(http://i916.photobucket.com/albums/ad8/paulak100/Obraz395.jpg);
+    background-image: url(gallery-img8.jpg);
     /*you can shift a large background image, but it can get complicated
     best to keep the image as the total width (200px) and height (174px)
     that the hex would be.

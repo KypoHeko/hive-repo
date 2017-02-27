@@ -10,7 +10,7 @@ body {
 
 .hexrow {
   white-space: nowrap;
-  margin: 0 34px 3px;
+  margin: 0 34px;
 }
 
 .hexrow > div {

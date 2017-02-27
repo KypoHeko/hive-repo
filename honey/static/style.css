@@ -41,6 +41,30 @@ h2 {
   margin-left: 50px;
 }
 
+.aside1,
+.aside2 {
+    float: left;
+}
+
+.aside2 {
+    margin: 50px 40px 0 5px;
+}
+
+.aside1 * {
+  height: 100px;
+  width: 100px;
+  background-color: #555;
+  margin-top: 5px;
+  text-align: center;
+}
+
+.aside2 * {
+  height: 200px;
+  width: 100px;
+  background-color: #555;
+  margin-top: 5px;
+}
+
 
 
 /* Button hover */

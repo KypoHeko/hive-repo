@@ -1,11 +1,15 @@
 from django.shortcuts import render
 from .models import Persona
+#from django.http import http404
 
 def index(request):
     return render(request, "index.html")
 
 def main(request):
     return render(request, "main.html")
+
+def er404(request):
+    return render(request, "404.html")
 
 def id(request, pk):
     data = Persona.objects.get(id=pk)

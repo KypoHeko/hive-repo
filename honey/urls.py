@@ -6,4 +6,5 @@ urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^main/$', views.main, name='main'),
     url(r'^id(?P<pk>[0-9]+)/$', views.id, name='id'),
+    url(r'^404/$', views.er404, name='er404',)
 ]

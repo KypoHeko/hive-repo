@@ -1,21 +1,31 @@
 {% extends 'layout.html' %}
 
+<!-- Фамилияимя в заголовке вкладки -->
 {% block title %} {{ data.surname }} {{ data.name }}{% endblock %}
 
 {% block content %}
 
+<div class="main-photo"></div>
+<div class="ph">
+  <div class="photo1"></div>
+  <div class="photo2"></div>
+</div>
+
+<!-- Список друзей -->
 <div class="aside1">
   {% for friend in dates %}
     <div><a href="/id{{ friend.id }}">ID{{ friend.id }}</a></div>
   {% endfor %}
 </div>
 
+<!-- Личная галерея -->
 <div class="aside2">
-  {% for _ in '123' %}
+  {% for _ in 'xxx' %}
     <div></div>
   {% endfor %}
 </div>
 
+<!-- О себе -->
 <h2>
   <table>
     <tr><td>ID</td><td>{{ data.id }}</td></tr>

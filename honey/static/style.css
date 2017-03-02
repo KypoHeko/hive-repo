@@ -10,15 +10,7 @@
 body {
   background: url('img/background.png');
   padding-left: 25px;
-}
-
-table {
-  width: 600px;
-}
-
-td {
-  padding: 0 10px;
-  vertical-align: top;
+  padding-right: 25px;
 }
 
 h1, 
@@ -27,27 +19,71 @@ h2 {
   font-family: 'Deus ex'; 
 }
 
-.temp{
-  text-align: center;
-}
-
-.header * {
-  display: inline-block;
-}
-
+/* for index */
 .main-page {
   position: absolute;
   top: 40%;
   margin-left: 50px;
 }
 
+/* for main */
+.temp{
+  text-align: center;
+}
+
+/* for layout */
+
+.header * {
+  display: inline-block;
+}
+
+/* for id */
+.main-photo {
+  height: 120px;
+  background-image: url(img/gallery-img4.jpg);
+  background-position: center 65%;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+
+.ph {
+  position: relative;  
+  top: -120px;
+  height: 85px;
+}
+
+.photo1,
+.photo2 {
+  position: absolute;
+}
+
+.photo1 {
+  height: 210px;
+  width: 210px;
+  background-image: url(img/nina-dobrev.jpg);
+  background-position: center top;
+}
+
+.photo2 {
+  height: 180px;
+  width: 180px;
+  top: 80px;
+  left: 180px;
+  background-image: url(img/coffee-cup.jpg);
+  background-position: 20% 40%;
+}
+
 .aside1,
 .aside2 {
-    float: left;
+  float: left;
+}
+
+.aside1 {
+  margin-top: 5px; 
 }
 
 .aside2 {
-    margin: 50px 40px 0 5px;
+  margin: 55px 115px 0 5px;
 }
 
 .aside1 * {
@@ -60,11 +96,22 @@ h2 {
 
 .aside2 * {
   height: 200px;
-  width: 100px;
-  background-color: #555;
+  width: 160px;
+  background-image: url(img/gallery-img10.jpg);
+  background-position: center 20%;
   margin-top: 5px;
 }
 
+table {
+  width: 600px;
+}
+
+td {
+  padding: 0 10px;
+  vertical-align: top;
+}
+
+/* for 404 */
 .error {
     position: absolute;
     bottom: 10%;
@@ -119,7 +166,7 @@ h2 {
 }
 
 
-
+/* for main */
 /* gallery */
 
 .gallery {

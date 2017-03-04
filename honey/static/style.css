@@ -91,13 +91,8 @@ td {
   vertical-align: top;
 }
 
-/* for 404 */
-.error {
-    position: absolute;
-    bottom: 10%;
-    right: 10%;
-    text-align: right
-}
+/* Other */
+
 
 
 
@@ -150,7 +145,7 @@ td {
 /* gallery */
 
 .gallery {
-  height: 400px;
+  height: 450px;
   width: 100%;
   background-color: #000;
   display: flex;

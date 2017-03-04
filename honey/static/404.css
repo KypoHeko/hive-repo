@@ -1,0 +1,20 @@
+@font-face {
+  font-family: 'Deus Ex';
+  src: url('deusex.otf')
+}
+
+body {
+  background: url('img/37.jpg');
+}
+
+h1 {
+  color: white;
+  font-family: 'Deus ex'; 
+}
+
+.error {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  text-align: right;
+}

@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils import timezone
 
 class Persona(models.Model):
     surname = models.CharField(max_length=32)
@@ -37,3 +38,12 @@ class Persona(models.Model):
 
             person.save()
 
+class Message(models.Model):
+    sender = models.IntegerField()
+    recepient = models.IntegerField()
+    text = models.TextField()
+    created_date = models.DateTimeField(default=timezone.now)
+
+class Community(models.Model):
+    name = models.CharField(max_length=256)
+    descriptions = models.TextField()

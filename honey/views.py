@@ -11,6 +11,18 @@ def main(request):
 def er404(request):
     return render(request, "404.html")
 
+def messages(request):
+    return render(request, "messages.html")
+
+def friends(request):
+    return render(request, "friends.html")
+
+def communities(request):
+    return render(request, "communities.html")
+
+def gallery(request):
+    return render(request, "gallery.html")
+
 def id(request, pk):
     data = Persona.objects.get(id=pk)
 

@@ -2,8 +2,6 @@ from django.db import models
 from django.utils import timezone
 
 class Persona(models.Model):
-    username = models.CharField(max_length=32)
-    password = models.CharField(max_length=32)
     surname = models.CharField(max_length=32)
     name = models.CharField(max_length=32)
     age = models.IntegerField()
@@ -16,20 +14,20 @@ class Persona(models.Model):
         return 'self.id'
 
     @staticmethod
-    def _bootstrap(count, locale, gender):
+    def _bootstrap(count, gender):
         from elizabeth import(
             Personal,
             Text,
             )
 
-        p = Personal(locale)
-        t = Text(locale)
+        p = Personal('ru')
+        t = Text('en')
 
         for _ in range(count):
             person = Persona(
                     surname = p.surname(),
                     name = p.name(),
-                    age = p.age(maximum=35),
+                    age = p.age(minimum=18, maximum=35),
                     occupation = p.occupation(),
                     worldview = p.worldview(),
                     quote = t.quote(),

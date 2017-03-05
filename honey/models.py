@@ -2,6 +2,8 @@ from django.db import models
 from django.utils import timezone
 
 class Persona(models.Model):
+    username = models.CharField(max_length=32)
+    password = models.CharField(max_length=32)
     surname = models.CharField(max_length=32)
     name = models.CharField(max_length=32)
     age = models.IntegerField()
@@ -10,11 +12,8 @@ class Persona(models.Model):
     quote = models.CharField(max_length=128)
 
     #Для работы через shell
-    #def __str__(self):
-    #    return self.surname
-
-    #def __init__(self, **kwargs):
-    #    super(Persona, self).__init__(**kwargs)
+    def __str__(self):
+        return 'self.id'
 
     @staticmethod
     def _bootstrap(count, locale, gender):

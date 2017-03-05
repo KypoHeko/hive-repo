@@ -21,9 +21,19 @@ h2 {
 
 /* for index */
 .main-page {
+  height: 180px;
+  width: 200px;
+  background-color: #333;
+  padding-left: 30px;
+  margin-left: 30px;
+    
   position: absolute;
-  top: 40%;
-  margin-left: 50px;
+  top: 50%;
+  -moz-transform: translateY(-50%); /* Для Firefox */
+  -ms-transform: translateY(-50%); /* Для IE */
+  -webkit-transform: translateY(-50%); /* Для Safari, Chrome, iOS */
+  -o-transform: translateY(-50%); /* Для Opera */
+  transform: translateY(-50%);
 }
 
 /* for main */

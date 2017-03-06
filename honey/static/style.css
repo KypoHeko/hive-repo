@@ -29,11 +29,9 @@ h2 {
     
   position: absolute;
   top: 50%;
-  -moz-transform: translateY(-50%); /* Для Firefox */
-  -ms-transform: translateY(-50%); /* Для IE */
+    
   -webkit-transform: translateY(-50%); /* Для Safari, Chrome, iOS */
-  -o-transform: translateY(-50%); /* Для Opera */
-  transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 
 /* for main */
@@ -65,7 +63,7 @@ h2 {
 }
 
 .aside2 {
-  margin: 55px 65px 0 5px;
+  margin: 55px 30px 0 5px;
 }
 
 .aside3 {
@@ -93,7 +91,7 @@ h2 {
 }
 
 table {
-  width: 600px;
+  width: 550px;
 }
 
 td {
@@ -110,45 +108,41 @@ td {
 
 .btn-hvr{
   border: none;
-  
   text-align: center;
-  cursor: pointer;
-  
-  
   overflow: hidden;
   position: relative;
   color: #fff;
-  font-weight: 700;
   font-size: 18px;
-  background-color: #222;
-    
-  
+  background-color: #222;  
   font-family: 'Deus Ex';
 }
-
-.btn-hvr span{
-  position: relative;
-  z-index: 1;
-}
-
 .btn-hvr:after{
-  content: "";
+  content: '';
   position: absolute;
-  left: 10%;
-  top: 0%;
-  height: 490%;
-  width: 140%;
+  height: 120%;
+  width: 15px;
+  left: -20px;
+  bottom: 0;
   background: darkorange;
-  -webkit-transition: all .25s ease-in-out;
-  transition: all .25s ease-in-out;
-  -webkit-transform: translateX(-98%) translateY(-25%) rotate(45deg);
-  transform: translateX(-98%) translateY(-25%) rotate(45deg);
+    
+  -webkit-transition: .5s;
+          transition: .5s;
+  -webkit-transform: skewX(45deg);
+          transform: skewX(45deg);
+}
+.btn-hvr span {
+    position: relative;
+    z-index: 1;
+}
+.btn-hvr:hover {
+  cursor: pointer;
+  color: #222;
+}
+.btn-hvr:hover:after {
+  left: -20px;
+  width: 140%;
 }
 
-.btn-hvr:hover:after {
-  -webkit-transform: translateX(-9%) translateY(-25%) rotate(45deg);
-  transform: translateX(-9%) translateY(-25%) rotate(45deg);
-}
 
 
 /* for main */

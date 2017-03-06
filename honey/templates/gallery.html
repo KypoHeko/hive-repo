@@ -1,6 +1,6 @@
 {% extends 'layout.html' %}
 
-{% block title %} Page for gallery {% endblock %}
+{% block title %} Your gallery {% endblock %}
 
 {% block content %}
 
@@ -8,6 +8,12 @@
     <h1>Page for gallery</h1>
   </div>
 
-  <img src="../static/img/diktat.jpg" width="100%">
+  <div class="scale-sepia column"> 
+    {% for _ in 'xxxx xxxx xxxx xxx' %}
+      <div class="g-image"></div>
+    {% endfor %}
+  </div>
 
 {% endblock %}
+
+<!--<img src="http://nxworld.net/codepen/css-image-hover-effects/pic01.jpg" />-->

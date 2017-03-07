@@ -9,11 +9,12 @@
   </div>
 
   <div class="scale-sepia column"> 
-    {% for _ in 'xxxx xxxx xxxx xxx' %}
-      <div class="g-image"></div>
+    {% for i in range %}
+      <div>
+        <img src="../static/img/gallery-img{{ i }}.jpg">
+      </div>
     {% endfor %}
   </div>
 
-{% endblock %}
 
-<!--<img src="http://nxworld.net/codepen/css-image-hover-effects/pic01.jpg" />-->
+{% endblock %}

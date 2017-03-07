@@ -21,7 +21,7 @@ h2 {
 .main-page {
   height: 180px;
   width: 200px;
-  background-color: #333;
+  /*background-color: #333;*/
   padding-left: 30px;
   margin-left: 30px;
     
@@ -196,80 +196,32 @@ td {
 	clear: both;
 	display: block;
 }
-.column .g-image {
+.column div {
 	position: relative;
 	float: left;
 	width: 320px;
 	height: 180px;
-	margin: 0 0 25px 25px;
+	margin: 0 0 10px 10px;
 }
-.g-image {
+.scale-sepia img {
 	-webkit-filter: sepia(100%);
 	        filter: sepia(100%);
 	-webkit-transition: .3s ease-in-out;
 	        transition: .3s ease-in-out;
 }
-.g-image:hover  {
+img:hover {
 	-webkit-filter: sepia(0);
 	        filter: sepia(0);
-  -webkit-transform: scale(2.5);
-          transform: scale(2.5);
+  -webkit-transform: scale(1);
+          transform: scale(1);
   z-index: 1;
 }
-.g-image {
-  background-size: cover;
-}
-.g-image:nth-of-type(1) {
-  background-image: url(img/gallery-img1.jpg);
-}
-.g-image:nth-of-type(2) {
-  background-image: url(img/gallery-img2.jpg);
-}
-.g-image:nth-of-type(3) {
-  background-image: url(img/gallery-img3.jpg);
-}
-.g-image:nth-of-type(4) {
-  background-image: url(img/gallery-img4.jpg);
-}
-.g-image:nth-of-type(5) {
-  background-image: url(img/gallery-img5.jpg);
-}
-.g-image:nth-of-type(6) {
-  background-image: url(img/gallery-img6.jpg);
-}
-.g-image:nth-of-type(7) {
-  background-image: url(img/gallery-img7.jpg);
-}
-.g-image:nth-of-type(8) {
-  background-image: url(img/gallery-img8.jpg);
-}
-.g-image:nth-of-type(9) {
-  background-image: url(img/gallery-img9.jpg);
-}
-.g-image:nth-of-type(10) {
-  background-image: url(img/gallery-img10.jpg);
-}
-.g-image:nth-of-type(11) {
-  background-image: url(img/gallery-img11.jpg);
-}
-.g-image:nth-of-type(12) {
-  background-image: url(img/gallery-img12.jpg);
-}
-.g-image:nth-of-type(13) {
-  background-image: url(img/gallery-img13.jpg);
-}
-.g-image:nth-of-type(14) {
-  background-image: url(img/gallery-img14.jpg);
-}
-.g-image:nth-of-type(15) {
-  background-image: url(img/gallery-img15.jpg);
-}
-.g-image:nth-of-type(16) {
-  background-image: url(img/gallery-img16.jpg);
-}
-.g-image:nth-of-type(17) {
-  background-image: url(img/gallery-img17.jpg);
-}
-.g-image:nth-of-type(18) {
-  background-image: url(img/gallery-img18.jpg);
+img {
+  height: 450px;
+	width: 800px;
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  -webkit-transform: scale(0.4);
+          transform: scale(0.4);
 }

@@ -11,8 +11,7 @@ body {
   padding-left: 25px;
   padding-right: 25px;
 }
-h1, 
-h2 {
+h1, h2 {
   color: white;
   font-family: 'Deus ex'; 
 }
@@ -48,12 +47,10 @@ h2 {
   background-image: url(img/gallery-img2.jpg);
   background-position: center 45%;
 }
-.aside1,
-.aside2 {
+.aside1, .aside2 {
   float: left;
 }
-.aside1,
-.aside3 {
+.aside1, .aside3 {
   margin-top: 5px; 
 }
 .aside2 {
@@ -189,8 +186,7 @@ td {
 
 
 
-/* For gallery page */
-
+/* for gallery page */
 .column::after {
 	content: '';
 	clear: both;
@@ -225,3 +221,40 @@ img {
   -webkit-transform: scale(0.4);
           transform: scale(0.4);
 }
+
+
+
+/* for musuician */
+.color-row, .dark-row {
+  width: 100%;
+  display: flex;
+}
+.color-row {
+  height: 120px;
+  background-color: black; 
+}
+.dark-row {
+  position: relative;
+  top: -120px;
+  height: 75px;
+  justify-content: space-around;
+}
+.color-key, .dark-key {
+  flex-grow: 1;
+  opacity: 1;
+  transition: opacity .3s ease-in-out; 
+  margin-right: 1px;
+}
+.dark-key {
+  background-color: #222;
+}
+.color-key:hover , .dark-key:hover{
+  opacity: .5;
+  transition: opacity .3s ease-in-out; 
+}
+
+/*
+.dark-key:first-of-type, .dark-key:last-of-type {
+  flex-grow: 0.5;
+}
+*/

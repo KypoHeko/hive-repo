@@ -6,6 +6,7 @@ urlpatterns = [
     url(r'^$', views.index, name='index'),
     url(r'^main/$', views.main, name='main'),
     url(r'^id(?P<pk>[0-9]+)/$', views.id, name='id'),
+    url(r'^musician/$', views.musician, name='musician',),    
     url(r'^404/$', views.er404, name='er404',),
     url(r'^messages/$', views.messages, name='messages',),
     url(r'^friends/$', views.friends, name='friends',),

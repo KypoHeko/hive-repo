@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block title %} Musician {% endblock %}
+
+{% block content %}
+
+  <div>
+      
+    <div class="color-row">
+      {% for i in colors %}
+        <div style="background-color: #{{ i }}" class="color-key"></div>
+      {% endfor %}
+    </div>
+      
+<!--
+    <div class="dark-row">
+      {% for _ in "x"|rjust:"34" %}
+        <div class="dark-key"></div>
+      {% endfor %}
+    </div>
+-->
+  </div>
+
+{% endblock %}

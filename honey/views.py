@@ -12,11 +12,11 @@ def er404(request):
     return render(request, "404.html")
 
 def musician(request):
-    colors = ["ff6a00", "fe9000", "feb500", "fddb00", "f9fd01", "d3fc01", "adfc01",
-              "87fb01", "62fb02", "3cfa02", "17f902", "03f912", "03f937", "03f85c", 
-              "03f881", "04f7a5", "04f7c9", "04f6ed", "04daf6", "05b6f5", "0592f5",
-              "056ef4", "054af4", "0626f3", "0906f3", "2c06f2", "5006f2", "7307f1",
-              "9607f0", "b907f0", "db08ef", "ef08e1", "ef08be", "ee089b", "ee0878"]
+    colors = ["673ab7", "5d3fb6", "5345b6", "494bb5", "3f51b5", "3067c4", "217dd4", 
+              "1293e4", "03a9f4", "02adec", "01b2e4", "00b7dc", "00bcd4", "13b8b3", 
+              "26b592", "39b271", "4caf50", "6cba4a", "8cc544", "acd03e", "cddc39",
+              "d9df39", "e6e33a", "f2e73a", "ffeb3b", "ffd62c", "ffc11d", "ffac0e",
+              "ff9800", "fd8909", "fb7f12", "f96d1b", "f75f24", "f5512d", "f44336"]
     return render(request, "musician.html", {'colors':colors})
 
 def messages(request):

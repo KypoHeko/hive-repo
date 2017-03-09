@@ -4,7 +4,7 @@
 
 {% block content %}
 
-  <div>
+  <div class="keyboard">
       
     <div class="color-row">
       {% for i in colors %}
@@ -15,7 +15,8 @@
     {% for _ in "x"|rjust:"25" %}
       <div class="dark-key"></div>
     {% endfor %}
-
+      
   </div>
+
 
 {% endblock %}

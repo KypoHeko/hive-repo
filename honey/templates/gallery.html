@@ -8,10 +8,10 @@
     <h1>Page for gallery</h1>
   </div>
 
-  <div class="scale-sepia column"> 
+  <div class="scale-sepia clearfix"> 
     {% for i in range %}
       <div>
-        <img src="../static/img/gallery-img{{ i }}.jpg">
+        <img class="glr-img" src="../static/img/gallery-img{{ i }}.jpg">
       </div>
     {% endfor %}
   </div>

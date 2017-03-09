@@ -1,28 +1,32 @@
 {% extends 'layout.html' %}
 
 <!-- Фамилияимя в заголовке вкладки -->
-{% block title %} {{ data.surname }} {{ data.name }}{% endblock %}
+{% block title %} {{ data.surname }} {{ data.name }} {% endblock %}
 
 {% block content %}
 
 <div class="main-photo"></div>
+
 <!-- Список друзей -->
 <div class="aside1">
-  {% for friend in dates %}
-    <div><a href="/id{{ friend.id }}">ID{{ friend.id }}</a></div>
+  {% for friend in friends %}
+    <div>
+      <a href="/id{{ friend.id }}">ID{{ friend.id }}</a>
+    </div>
   {% endfor %}
 </div>
 
 <!-- Личная галерея -->
 <div class="aside2">
-  {% for _ in 'xxx' %}
-    <div></div>
+  {% for pic in pics %}
+    <div>
+      <img class="pic" src="../static/img/gallery-img{{ pic }}.jpg">
+    </div>
   {% endfor %}
 </div>
 
 <!-- полезные ссылки -->
-<div class="aside3">
-  <a href="/friends"><button class="btn-hvr"><span>Friends</span></button></a><br>
+<div class="aside3">  <a href="/friends"><button class="btn-hvr"><span>Friends</span></button></a><br>
   <a href="/messages"><button class="btn-hvr"><span>Messages</span></button></a><br>
   <a href="/communities"><button class="btn-hvr"><span>Communities</span></button></a><br>
   <a href="/gallery"><button class="btn-hvr"><span>Gallery</span></button></a><br>

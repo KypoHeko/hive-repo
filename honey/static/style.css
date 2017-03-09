@@ -54,7 +54,7 @@ h1, h2 {
   margin-top: 5px; 
 }
 .aside2 {
-  margin: 55px 30px 0 5px;
+  margin: 5px 30px 0 5px;
 }
 .aside3 {
   float: right;
@@ -67,11 +67,13 @@ h1, h2 {
   text-align: center;
 }
 .aside2 div {
-  height: 200px;
+  overflow: hidden;
+  height: 205px;
   width: 160px;
-  background-image: url(img/nina-dobrev.jpg);
-  background-position: center 20%;
   margin-top: 5px;
+}
+.pic {   
+  height: 205px;
 }
 .aside3 * {
   margin-bottom: 5px;
@@ -187,32 +189,32 @@ td {
 
 
 /* for gallery page */
-.column::after {
+.clearfix:after {
 	content: '';
 	clear: both;
 	display: block;
 }
-.column div {
+.scale-sepia div {
 	position: relative;
 	float: left;
 	width: 320px;
 	height: 180px;
 	margin: 0 0 10px 10px;
 }
-.scale-sepia img {
+.scale-sepia glr-img {
 	-webkit-filter: sepia(100%);
 	        filter: sepia(100%);
 	-webkit-transition: .3s ease-in-out;
 	        transition: .3s ease-in-out;
 }
-img:hover {
+glr-img:hover {
 	-webkit-filter: sepia(0);
 	        filter: sepia(0);
   -webkit-transform: scale(1);
           transform: scale(1);
   z-index: 1;
 }
-img {
+glr-img {
   height: 450px;
 	width: 800px;
   position: absolute;

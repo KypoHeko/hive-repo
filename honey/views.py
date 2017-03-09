@@ -1,6 +1,6 @@
 from django.shortcuts import render
 from .models import Persona
-#from django.http import http404
+import random
 
 def index(request):
     return render(request, "index.html")
@@ -33,11 +33,15 @@ def gallery(request):
 
 def id(request, pk):
     data = Persona.objects.get(id=pk)
+    pics = []
 
     #достаем случайные 6 записей из БД
     for _ in range(6):
-        dates = Persona.objects.all().order_by('?')[:6]
+        friends = Persona.objects.all().order_by('?')[:6]
 
-    return render(request, "id.html", {'data':data, 'dates':dates})
+    for _ in range(3):
+        pics.append(random.randint(1, 18))
+
+    return render(request, "id.html", {'data':data, 'friends':friends, 'pics':pics})
 
 # Create your views here.

@@ -207,14 +207,14 @@ td {
 	-webkit-transition: .3s ease-in-out;
 	        transition: .3s ease-in-out;
 }
-glr-img:hover {
+.glr-img:hover {
 	-webkit-filter: sepia(0);
 	        filter: sepia(0);
   -webkit-transform: scale(1);
           transform: scale(1);
   z-index: 1;
 }
-glr-img {
+.glr-img {
   height: 450px;
 	width: 800px;
   position: absolute;

@@ -12,4 +12,5 @@ urlpatterns = [
     url(r'^friends/$', views.friends, name='friends',),
     url(r'^communities/$', views.communities, name='communities',),
     url(r'^gallery/$', views.gallery, name='gallery',),    
+    url(r'^gallery2/$', views.gallery2, name='gallery2',),    
 ]

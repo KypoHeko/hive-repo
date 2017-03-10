@@ -188,7 +188,7 @@ td {
 
 
 
-/* for gallery page */
+/* for gallery */
 .clearfix:after {
 	content: '';
 	clear: both;
@@ -264,4 +264,101 @@ td {
 }
 .dark-key:nth-of-type(2) {
   margin-left: 2.1%;
+}
+
+
+
+/* for gallery2 */ 
+/* test */
+.hexrow {
+    margin: 100px 50px;
+    
+    /* test */
+    width: 1600px;
+}
+.hexrow > div {
+    width: 100px;
+    height: 173.2px;
+    margin: 0 25px;
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: inline-block;
+    
+    /* test */
+	-webkit-filter: sepia(100%);
+	        filter: sepia(100%);
+	-webkit-transition: .3s ease-in-out;
+	        transition: .3s ease-in-out;
+}
+
+/* test */
+.hexrow > div:hover {
+
+	-webkit-filter: sepia(0);
+	        filter: sepia(0);
+  -webkit-transform: scale(2);
+          transform: scale(2);
+  z-index: 1;
+}
+
+
+.hexrow > div:nth-child(odd) {
+    top: 43.3px;
+}
+.hexrow > div:nth-child(even) {
+    top: -44.8px;
+}
+.hexrow > div > div:first-of-type,
+.hexrow > div > div:last-of-type {
+    width: 100%;
+    height: 100%;    
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-image: inherit;
+}
+.hexrow > div > div:first-of-type {
+    z-index: -1;
+
+    -webkit-transform:rotate(60deg);
+    transform:rotate(60deg);
+}
+.hexrow > div > div:last-of-type {
+    content: '';
+    z-index: -2;
+
+    -webkit-transform:rotate(-60deg);
+    transform:rotate(-60deg);
+}
+
+.hexrow > div > div:first-of-type:before,
+.hexrow > div > div:last-of-type:before {
+    content: '';
+    position: absolute;
+    width: 200px;
+    height: 100%;
+    background-image: inherit;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+.hexrow > div > div:first-of-type:before {
+    -webkit-transform:rotate(-60deg) translate(-150px, 0);
+    transform:rotate(-60deg) translate(-150px, 0);
+
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+.hexrow > div > div:last-of-type:before {    
+    -webkit-transform:rotate(60deg) translate(100px, 86.6px);
+    transform:rotate(60deg) translate(100px, 86.6px);
+
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
 }

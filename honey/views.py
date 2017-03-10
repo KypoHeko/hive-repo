@@ -31,6 +31,9 @@ def communities(request):
 def gallery(request):
     return render(request, "gallery.html", {'range':range(1,19)})
 
+def gallery2(request):
+    return render(request, "gallery2.html", {'range':range(1,28)})
+
 def id(request, pk):
     data = Persona.objects.get(id=pk)
     pics = []
@@ -40,7 +43,7 @@ def id(request, pk):
         friends = Persona.objects.all().order_by('?')[:6]
 
     for _ in range(3):
-        pics.append(random.randint(1, 18))
+        pics.append(random.randint(1, 27))
 
     return render(request, "id.html", {'data':data, 'friends':friends, 'pics':pics})
 

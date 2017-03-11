@@ -11,8 +11,8 @@ body {
   padding-right: 25px;
     
   height: 100vh;
-  background: -webkit-linear-gradient(bottom right, #271200 5%, #773b00 30%, #ee7600 50%, #773b00 70%, #271200 95%);
-  background: linear-gradient(to top left, #271200 5%, #773b00 30%, #ee7600 50%, #773b00 70%, #271200 95%);
+  background: -webkit-linear-gradient(bottom, #271200 10%, #773b00, #ee7600, #773b00, #271200);
+  background: linear-gradient(to top, #271200 10%, #773b00, #ee7600, #773b00, #271200);
 }
 h1, h2 {
   color: white;

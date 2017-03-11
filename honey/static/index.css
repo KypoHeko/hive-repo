@@ -6,6 +6,7 @@
 body {
   padding-left: 25px;
   padding-right: 25px;
+  overflow: hidden;
     
   height: 100vh;
   background: -webkit-radial-gradient(at center, #ee7600, #773b00, #271200 80%);

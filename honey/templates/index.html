@@ -6,11 +6,20 @@
   <title>Hive</title>
     
   {% load staticfiles %}
-  <link rel="stylesheet" href="{% static 'style.css' %}">
+  <link rel="stylesheet" href="{% static 'index.css' %}">
   <link rel="icon" href="{% static 'hive-ico.ico' %}">
     
 </head>
 <body>
+    
+  <div class="hexagons">
+    {% for _ in "x"|rjust:"25" %}
+      <div class="hexagon">
+        <div></div>
+        <div></div>
+      </div>
+    {% endfor %}
+  </div>
     
   <div class="main-page">
     <h1>Hive</h1>

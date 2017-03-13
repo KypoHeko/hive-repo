@@ -29,7 +29,7 @@ def communities(request):
     return render(request, "communities.html")
 
 def gallery(request):
-    return render(request, "gallery.html", {'range':range(1,19)})
+    return render(request, "gallery.html", {'range':range(1,28)})
 
 def gallery2(request):
     return render(request, "gallery2.html", {'range':range(1,28)})

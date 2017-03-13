@@ -192,13 +192,15 @@ td {
 }
 .descr {
   width:0px;
-  background-color: rgba(17,17,17,0.7);
-  opacity: 0;
-  position: relative;
   padding: 0 10px;
+  position: relative;
   top: 60%;
   left: 60%;
+  background-color: rgba(17,17,17,0.7);
+  opacity: 1;
+  overflow: hidden;
   text-align: right;
+  white-space: nowrap;
 }
 .descr p {
   color: white;
@@ -208,6 +210,7 @@ td {
   width:400px;
   opacity: 1;
   transition: opacity .3s ease-in-out;
+  white-space: normal;
 }
 
 

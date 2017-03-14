@@ -195,11 +195,10 @@ td {
   padding: 0 10px;
   position: relative;
   top: 60%;
-  left: 60%;
+  left: 0;
   background-color: rgba(17,17,17,0.7);
-  opacity: 1;
+  opacity: 0;
   overflow: hidden;
-  text-align: right;
   white-space: nowrap;
 }
 .descr p {

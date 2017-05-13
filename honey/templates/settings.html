@@ -1,0 +1,16 @@
+{% extends 'layout.html' %}
+
+{% block title %} Edit information {% endblock %}
+
+{% block content %}
+
+  <div class="temp">
+    <h1>Edit information</h1>
+  </div>
+
+  <form method="POST" class="post-form">{% csrf_token %}
+    <h2>{{ form.as_p }}</h2>
+    <button type="submit" class="btn-hvr"><span>Save</span></button>
+  </form>
+
+{% endblock %}

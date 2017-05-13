@@ -1,13 +1,21 @@
 {% extends 'layout.html' %}
 
-{% block title %} Page for friends {% endblock %}
+{% block title %} Your gallery {% endblock %}
 
 {% block content %}
 
   <div class="temp">
-    <h1>Page for friends</h1>
+    <h1>Friends</h1>
   </div>
 
-  <img src="../static/img/1407431342600.png">
+  <div class="hexrow"> 
+    {% for i in range %}
+      <div style="background-image: url(../static/img/gallery-img{{ i }}.jpg);">
+        <div></div>
+        <div></div>
+      </div>
+    {% endfor %}
+  </div>
+
 
 {% endblock %}

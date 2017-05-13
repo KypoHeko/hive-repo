@@ -16,19 +16,31 @@ h1 {
   color: white;
   font-family: 'Deus ex'; 
 }
-.main-page {
-  height: 180px;
-  width: 200px;
-  background-color: rgba(17,17,17,0.5);
-  padding-left: 30px;
-  margin-left: 30px;
-    
+.main-panel,
+.login-panel,
+.signup-panel {
+  background-color: rgba(17,17,17,0.5);    
   position: absolute;
   top: 50%;
-    
+  padding: 0 30px;
   -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+          transform: translateY(-50%);    
 }
+.main-panel {
+  height: 215px;
+  width: 150px;
+  margin-left: 30px;
+}
+.login-panel {
+  margin-left: 270px;
+  padding-bottom: 20px;
+}
+.signup-panel {
+  margin-left: 500px;  
+  padding-bottom: 20px;  
+}
+
+
 
 .btn-hvr{
   border: none;
@@ -70,7 +82,7 @@ h1 {
 .hexagons > div {
   position: absolute;
   background: darkorange;
-  box-shadow: 0 0 5px 5px darkorange;
+  box-shadow: 0 0 1px 1px darkorange;
 }
 .hexagons > div > div:first-of-type,
 .hexagons > div > div:last-of-type {

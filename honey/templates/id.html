@@ -4,7 +4,6 @@
 {% block title %} {{ data.surname }} {{ data.name }} {% endblock %}
 
 {% block content %}
-
 <div>
   <div class="avatar"></div>
   <div class="main-photo"></div>
@@ -29,11 +28,12 @@
 </div>
 
 <!-- полезные ссылки -->
-<div class="aside3">  <a href="/friends"><button class="btn-hvr"><span>Friends</span></button></a><br>
+<div class="aside3">  
+  <a href="/friends"><button class="btn-hvr"><span>Friends</span></button></a><br>
   <a href="/messages"><button class="btn-hvr"><span>Messages</span></button></a><br>
   <a href="/communities"><button class="btn-hvr"><span>Communities</span></button></a><br>
   <a href="/gallery"><button class="btn-hvr"><span>Gallery</span></button></a><br>
-  <a href="/gallery2"><button class="btn-hvr"><span>Gallery2</span></button></a><br>
+  <a href="{% url 'settings' %}"><button class="btn-hvr"><span>Settings</span></button></a><br>
 </div>
 
 <!-- О себе -->
@@ -49,6 +49,29 @@
   </table>
 </h2>
 
+<!-- Лента -->
+<div class="newsline infinite-container">
+  {% for number in numbers %}
+    <div class="newsblock infinite-item">
+      <h2>
+        Title №{{ number }}<br>
+        <br>
+        Lorem ipsum dolor sit amet<br>
+        April 23, 2017, 1:45 p.m.
+      </h2>
+    </div>
+  {% endfor %}
+</div>
 
+{% if numbers.has_next %}
+  <a class="infinite-more-link" href="?page={{ numbers.next_page_number }}">More</a>
+{% endif %}
+{% endblock %}
 
+{% block javascript %}
+  <script>
+    var infinite = new Waypoint.Infinite({
+      element: $(".infinite-container")[0]
+    });
+  </script>
 {% endblock %}

@@ -3,6 +3,8 @@ See result in kypoheko.pythonanywhere.com
 
 git clone https://github.com/KypoHeko/hive-repo.git
 
+--//--//--
+
 (optional) 
 
 pip install virtualenv
@@ -12,9 +14,10 @@ python -m venv myvenv
 cd myvenv/activate
 
 cd ..
+
 cd ..
 
-
+--//--//--
 
 pip install -r requirements.txt
 

@@ -12,7 +12,6 @@ python -m venv myvenv
 cd myvenv/activate
 
 cd ..
-
 cd ..
 
 

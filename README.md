@@ -29,4 +29,6 @@ from honey.models import Persona
 
 Persona()._bootstrap(count=250, gender='female')
 
+quit()
+
 python manage.py runserver

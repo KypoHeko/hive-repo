@@ -8,8 +8,7 @@
   {% load staticfiles %}
   <link rel="stylesheet" href="{% static 'index.css' %}">
   <link rel="icon" href="{% static 'hive-ico.ico' %}">
-  <script type="text/javascript" src="{% static 'index.js' %}"></script>  
-  <script type="text/javascript" src="{% static 'jquery-3.1.1.slim.min.js' %}"></script>  
+  <script src="{% static 'js/index-script.js' %}" async></script>
     
 </head>
 <body>
@@ -25,21 +24,20 @@
     
   <div class="main-panel">
     <h1>Hive</h1>
-    <a href="/loginform"><button class="btn-hvr login"><span>LOG IN</span></button></a>
-    <p></p>
-    <a href="/signup"><button class="btn-hvr signup"><span>SIGN UP</span></button></a>
-    <p></p>
+    <p><a href="/loginform"><button class="btn-hvr login"><span>LOG IN</span></button></a></p>
+    <p><a href="/signup"><button class="btn-hvr signup"><span>SIGN UP</span></button></a></p>
     <a href="/main"><button class="btn-hvr"><span>A GUEST</span></button></a>
   </div>
-    
+
+<!--
   <div class="login-panel">
     <h1>Log in</h1>
     <form method="post">
       <p><input placeholder="Username" /></p>
       <p><input placeholder="Password" /></p>
       <p><button class="btn-hvr" type="submit"><span>Log in</span></button></p>
-      <button class="btn-hvr"><span>Cancel</span></button>
     </form>
+    <a href="#"><button class="btn-hvr login-cancel"><span>Cancel</span></button></a>
   </div>
     
   <div class="signup-panel">
@@ -48,10 +46,11 @@
       <p><input placeholder="Username" /></p>
       <p><input placeholder="Password" /></p>
       <p><input placeholder="Confirm password" /></p>
-      <p><button class="btn-hvr" type="submit"><span>Sign up</span></button></p>
-      <button class="btn-hvr"><span>Cancel</span></button>
+      <p><button class="btn-hvr" type="submit" OnClick><span>Sign up</span></button></p>
     </form>
+    <a href="#" OnClick="alert( 'Привет, Мир!' );"><button class="btn-hvr"><span>Cancel</span></button></a>
   </div>
+-->
 
 </body>
 </html>

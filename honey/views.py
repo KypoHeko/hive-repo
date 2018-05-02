@@ -59,12 +59,13 @@ def id(request, pk):
     for _ in range(3):
         pics.append(random.randint(1, 27))
 
+    avatar = random.randint(1, 27)
     number_list = range(1, 120)
     page = request.GET.get('page', 1)
     paginator = Paginator(number_list, 10)
     numbers = paginator.page(page)
 
-    return render(request, "id.html", {'data': data, 'friends': friends, 'pics': pics, 
+    return render(request, "id.html", {'data': data, 'friends': friends, 'pics': pics, 'avatar': avatar,
         'numbers': numbers})
 
 def signup(request):

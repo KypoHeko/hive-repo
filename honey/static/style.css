@@ -19,12 +19,10 @@ h1, h2 {
   font-family: 'Deus ex'; 
 }
 .main-panel {
-  width:auto;
+  width: auto;
   padding: 5px;
-  margin: 5px;
-  background-color: rgba(17,17,17,0.5);
+  background-color: rgba(25,25,25,0.7);
 }
-
 /* for index */
 .main-page {
   height: 180px;
@@ -39,28 +37,165 @@ h1, h2 {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
-
 /* for main */
 .temp{
   text-align: center;
 }
-
 /* for layout */
 .header * {
   display: inline-block;
 }
 
+
+
 /* for id */
+.avatar {
+  margin-left: 50px;
+  margin-bottom: 25px;
+  position: relative;
+}
+/* large photo */
 .main-photo {
-  height: 173.2px;
-  background-image: url(img/gallery-img14.jpg);
+  width: 500px;
+  height: 866px;
+  position: relative;
   background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
 }
-.aside1, .aside2 {
+.main-photo .main-panel {
+  width: 700px;
+  margin-left: 350px;
+}
+.main-photo > div:first-of-type,
+.main-photo > div:last-of-type {
+    width: 100%;
+    height: 100%;    
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-image: inherit;
+}
+.main-photo > div:first-of-type {
+    z-index: -1;
+
+    -webkit-transform:rotate(60deg);
+    transform:rotate(60deg);
+}
+.main-photo > div:last-of-type {
+    content: '';
+    z-index: -2;
+
+    -webkit-transform:rotate(-60deg);
+    transform:rotate(-60deg);
+}
+.main-photo > div:first-of-type:before,
+.main-photo > div:last-of-type:before {
+    content: '';
+    position: absolute;
+    width: 1000px;
+    height: 100%;
+    background-image: inherit;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+}
+.main-photo > div:first-of-type:before {
+    -webkit-transform:rotate(-60deg) translate(-750px, 0);
+    transform:rotate(-60deg) translate(-750px, 0);
+
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+.main-photo > div:last-of-type:before {    
+    -webkit-transform:rotate(60deg) translate(500px, 433px);
+    transform:rotate(60deg) translate(500px, 433px);
+
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+}
+/* small photo */
+.photos {
+  width: 200px;
+  height: 346.4px;
+  position: relative;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: inline-block;
+}
+.photos > div:first-of-type,
+.photos > div:last-of-type {
+    width: 100%;
+    height: 100%;    
+    position: absolute;
+    top: 0;
+    left: 0;
+    overflow: hidden;
+    background-image: inherit;
+}
+.photos > div:first-of-type {
+    z-index: -1;
+
+    -webkit-transform:rotate(60deg);
+    transform:rotate(60deg);
+}
+.photos > div:last-of-type {
+    content: '';
+    z-index: -2;
+
+    -webkit-transform:rotate(-60deg);
+    transform:rotate(-60deg);
+}
+.photos > div:first-of-type:before,
+.photos > div:last-of-type:before {
+    content: '';
+    position: absolute;
+    width: 400px;
+    height: 100%;
+    background-image: inherit;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    bottom: 0;
+    left: 0;
+    /*z-index: 1;*/
+}
+.photos > div:first-of-type:before {
+    -webkit-transform:rotate(-60deg) translate(-300px, 0);
+    transform:rotate(-60deg) translate(-300px, 0);
+
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+}
+.photos > div:last-of-type:before {    
+    -webkit-transform:rotate(60deg) translate(200px, 173.2px);
+    transform:rotate(60deg) translate(200px, 173.2px);
+
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0;
+}
+
+.hex1{
+  margin-left: 250px;
+  margin-bottom: 80px;
+}
+.hex2{
+  margin-left: 100px;
+  margin-bottom: 260px;
+}
+.hex3{
+  margin-left: 100px;
+  margin-bottom: 80px;
+}
+
+.aside1 {
   float: left;
-}
-.aside2 {
-  margin: 0 20px 0 5px;
 }
 .aside3 {
   float: right;
@@ -73,21 +208,12 @@ h1, h2 {
   margin-top: 5px;
   text-align: center;
 }
-.aside2 div {
-  overflow: hidden;
-  height: 205px;
-  width: 160px;
-  margin-top: 5px;
-}
-.pic {   
-  height: 205px;
-}
 .aside3 * {
   margin-bottom: 5px;
 }
 .newsline {
-  margin-left: 280px;
-  width: 1000px;
+  margin-left: 300px;
+  width: 800px;
   text-align: center;
 }
 .newsblock {

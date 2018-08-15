@@ -1,6 +1,9 @@
 ## Experimental social network
 
-## See result in kypoheko.pythonanywhere.com
+See result in kypoheko.pythonanywhere.com
+
+## Running the Project Locally
+Clone the repository
 ```
 git clone https://github.com/KypoHeko/hive-repo.git
 ```
@@ -14,7 +17,6 @@ cd ..
 cd ..
 ```
 
-## Running the Project Locally
 ```
 pip install -r requirements.txt
 python manage.py migrate

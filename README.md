@@ -1,6 +1,6 @@
 # Hive - Experimental social network
 
-See result in kypoheko.pythonanywhere.com
+See result in (deleted)
 
 ## Running the Project Locally
 Clone the repository:

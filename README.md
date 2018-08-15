@@ -1,11 +1,11 @@
-Experimental social network
+## Experimental social network
 
-See result in kypoheko.pythonanywhere.com
+## See result in kypoheko.pythonanywhere.com
 ```
 git clone https://github.com/KypoHeko/hive-repo.git
 ```
 
-(optional)
+## Create virtual environment
 ```
 pip install virtualenv
 python -m venv myvenv
@@ -14,6 +14,7 @@ cd ..
 cd ..
 ```
 
+## Running the Project Locally
 ```
 pip install -r requirements.txt
 python manage.py migrate

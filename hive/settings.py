@@ -25,7 +25,7 @@ SECRET_KEY = 'ttzq&%xt!4(o(+8*4n37yvimn$qrm0m^6-2kmw#v=d5k94hr04'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['kypoheko.pythonanywhere.com']
+ALLOWED_HOSTS = ['kypoheko.pythonanywhere.com', '127.0.0.1']
 
 
 # Application definition

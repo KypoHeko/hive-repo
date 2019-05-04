@@ -18,9 +18,9 @@ class Persona(models.Model):
 
     @staticmethod
     def _bootstrap(count, gender):
-        from mimesis import Personal, Text
+        from mimesis import Person, Text
 
-        p = Personal('ru')
+        p = Person('ru')
         t = Text('en')
 
         for _ in range(count):

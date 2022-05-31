@@ -1,3 +1,3 @@
-Django==1.11.20
+Django==1.11.29
 mimesis==3.1.0
 pytz==2019.1
